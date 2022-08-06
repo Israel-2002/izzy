@@ -1,0 +1,331 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Oswald', sans-serif;
+}
+span{
+    color: #A59678;
+}
+/*NAVIGATION BAR*/
+nav{
+    background-color: #2E323F;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+.nav__inner{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 1em 2em;
+}
+.logo{
+    font-size: 2.2rem;
+    color: #A59678;
+}
+.nav__toggle{
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.nav__toggle:hover{
+    color: #A59678;
+}
+.nav__toggle-rotate{
+    transform: rotate(270deg);
+}
+.links{
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s linear;
+}
+.show__links{
+    height: 20rem;
+}
+.links a{
+    font-size: 1.2rem;
+    color: white;
+    display: block;
+    margin: 1em;
+}
+.links a:hover{
+    color: #A59678;
+}
+.nav__btns{
+    margin: 1em;
+    padding: 0.7em;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #A59678;
+    border-style: none;
+    cursor: pointer;
+}
+.nav__btns:hover{
+    border: 1px solid white;
+}
+/*BANNER*/
+.banner{
+    background-color: #3B4050;
+}
+.banner__info{
+    padding: 5em 2em 2em;
+    color: white;
+}
+.banner__heading{
+    margin-bottom: 1em;
+}
+.banner__text{
+
+}
+.banner__text p{
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+.banner__btn{
+    text-align: center;
+}
+.banner__btn-inner{
+    cursor: pointer;
+    border-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1em;
+    background-color: #A59678;
+}
+.banner__btn-inner:hover{
+    border: 1px solid white;
+}
+.sub__content{
+    background-color: #ddd;
+}
+.sub__content-inner{
+    text-align: center;
+    padding: 3em 2em;
+}
+.sub__content-inner h2{
+    color: #A59678;
+    margin-bottom: 0.7em;
+}
+.sub__content-inner p{
+    margin-bottom: 2em;
+    line-height: 1.3;
+}
+/*MAIN CONTENT*/
+.main__content{
+    margin: 3em 2em;
+}
+.main__section-one h2{
+    color: #A59678;
+}
+.main__section-one p {
+    margin: 1em 0em;
+    line-height: 1.5;
+}
+.section-two__one,
+.section-two__two,
+.section-two__three{
+    background-color: #2E323F;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 1em;
+    line-height: 1.5;
+}
+.section-two__one p,
+.section-two__two p,
+.section-two__three p{
+    margin: 1em 0.5em;
+}
+footer{
+    background-color: #3B4050;
+    color: white;
+    padding: 3em 2em;
+    text-align: center;
+}
+.about,
+.getting__around,
+.other__things,
+.and__more{
+    margin: 2em 0em;
+}
+.inner__footer h3{
+    color: #A59678;
+    margin-bottom: 1em;
+}
+.inner__footer p{
+    line-height: 1.5;
+}
+.footer__lists ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERY*/
+@media(min-width:700px){
+    .nav__toggle{
+        display: none;
+    }
+    .links{
+        height: auto;
+        text-align: left;
+        display: flex;
+    }
+    .nav__center{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav__btns{
+        padding: 0.5em;
+    }
+    .links a{
+        margin: 1em 0.5em;
+    }
+    .banner__info{
+        display: flex;
+        justify-content: space-between;
+        margin: 2em 0em;
+    }
+    .banner__heading{
+        font-size: 3rem;
+        width: 100%;
+    }
+    .banner__text{
+        width: 80%
+    }
+    .banner__text p{
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    .sub__content-inner{
+        text-align: left;
+        margin-top: -2em;
+        display: flex;
+    }
+    .sub__content-inner h2{
+        text-align: center;
+    }
+    .sub__para{
+        padding-left: 2em;
+        line-height: 1.5;
+    }
+    .main__section-two{
+        display: flex;
+    }
+        .section-two__one p,
+        .section-two__two p,
+        .section-two__three p {
+            margin: 1em 0em;
+        }
+        .section-two__two,
+        .section-two__three{
+            margin-left: 1em;
+        }
+        .footer__lists{
+            margin-top: 3em;
+        }
+}
+
+
+
+
+@media(min-width:900px){
+    .nav__inner{
+        
+    }
+    .logo{
+        font-size: 2rem;
+    }
+    .links a{
+        font-size: 1rem;
+    }
+    .nav__btns{
+        font-size: 0.8rem;
+    }
+
+    .banner__info{
+        margin-top: 2em;
+    }
+    .banner__heading{
+        font-size: 2.5rem;
+    }
+    .banner__text p{
+        font-size: 1rem;
+        margin-bottom: 2em;
+    }
+    .banner__btn-inner{
+        font-size: 0.8rem;
+    }
+    .sub__content-inner h2{
+        font-size: 2.5rem;
+    }
+    .sub__content-inner p{
+        line-height: 1.5;
+    }
+    .main__section-one{
+        width: 100%;
+    }
+    .main__section-one h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .main__section-two{
+        flex-direction: column;
+        margin-left: 6em;
+        width: 50%;
+    }
+    .section-two__two,
+    .section-two__three {
+        margin-left: 0em;
+    }
+    .main__content{
+        display: flex;
+    }
+    footer{
+        text-align: left;
+    }
+    .footer__lists ul{
+        flex-direction: column;
+    }
+    .footer__lists{
+        display: flex;
+        justify-content: space-between;
+        width:50%;
+        margin-left: 3em;
+    }
+    .footer__lists li{
+        margin-bottom: 1em;
+    }
+    footer h1{
+        text-align: center;
+    }
+    .inner__footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 3em;
+    }
+    .about{
+        width: 40%;
+    }
+}
